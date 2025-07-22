@@ -1,0 +1,42 @@
+# Node & pnpm
+node_modules
+.pnpm-debug.log*
+pnpm-lock.yaml
+
+# Nuxt build & output
+.nuxt
+dist
+.output
+.cache
+*.local
+
+# VSCode & IDEs
+.vscode
+.idea
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env & config
+.env
+.env.*
+!.env.example
+
+# Test & coverage
+coverage
+*.log
+
+# Misc
+*.tgz
+*.bak
+*.tmp
+npm-debug.log*
+
+# Docker/devcontainer
+.gitpod*
+.devcontainer
+.dockerignore
+Dockerfile
+docker-compose* 

@@ -3,13 +3,31 @@
 //
 // See https://aka.ms/devcontainer.json for more information.
 {
-	"name": "Gitpod",
+	"name": "Gitpod_star",
 	// Use "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
 	// instead of the build to use a pre-built image.
 	"build": {
         "context": ".",
         "dockerfile": "Dockerfile"
-    }
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+    },
+    "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "antfu.vite",
+        "antfu.vite-inspect"
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker": {
+            // This option disables the installation of the Moby (Docker) engine inside the dev container.
+            "moby": false
+        }
+    },
+    "forwardPorts": [3000],
+    "postCreateCommand": "pnpm install"
 	// Features add additional features to your environment. See https://containers.dev/features
 	// Beware: features are not supported on all platforms and may have unintended side-effects.
 	// "features": {
