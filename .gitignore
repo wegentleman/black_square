@@ -1,40 +1,25 @@
-# root .gitignore
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
 
-# Node & pnpm
-node_modules/
-.pnpm-debug.log*
-pnpm-lock.yaml
+# Node dependencies
+node_modules
+.pnpm-store/
 
-# Nuxt build & output
-.nuxt/
-dist/
-.output/
-.cache/
-*.local
-
-# VSCode & IDEs
-.vscode/
-.idea/
-*.swp
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Env & config
-.env
-.env.*
-!.env.example
-
-# Test & coverage
-coverage/
+# Logs
+logs
 *.log
 
 # Misc
-*.tgz
-*.bak
-*.tmp
-npm-debug.log*
+.DS_Store
+.fleet
+.idea
 
-docs/planning.md
-.vscode/
+# Local env files
+.env
+.env.*
+!.env.example
