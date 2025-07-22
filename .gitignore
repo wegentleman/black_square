@@ -37,3 +37,4 @@ coverage/
 npm-debug.log*
 
 docs/planning.md
+.vscode/
